@@ -10,8 +10,8 @@
 
 - Input: 9 standardized features (numerical + ordinal encoded)
 - Hidden Layers:
-   Dense(128, ReLU) + BatchNormalization + Dropout(0.2)
-   Dense(128, ReLU) + BatchNormalization + Dropout(0.2)
-   Dense(64, ReLU) + BatchNormalization
+   - Dense(128, ReLU) + BatchNormalization + Dropout(0.2)
+   - Dense(128, ReLU) + BatchNormalization + Dropout(0.2)
+   - Dense(64, ReLU) + BatchNormalization
 - Output: Dense(1) (Linear activation for dollar price)
 - Optimization: Adam (lr=0.002) with MAE loss and EarlyStopping
