@@ -6,12 +6,12 @@
 | MAPE | ~8.24% | Average percentage error across all price tiers. |
 | Tolerance (±10%) | ~70.3% | ~70.3% of predictions land within 10% of true market price. |
 
-Sequential Deep Neural Network (DNN) designed for tabular data:
+### Sequential Deep Neural Network (DNN) designed for tabular data:
 
-Input: 9 standardized features (numerical + ordinal encoded)
-Hidden Layers:
-Dense(128, ReLU) + BatchNormalization + Dropout(0.2)
-Dense(128, ReLU) + BatchNormalization + Dropout(0.2)
-Dense(64, ReLU) + BatchNormalization
-Output: Dense(1) (Linear activation for dollar price)
-Optimization: Adam (lr=0.002) with MAE loss and EarlyStopping
+- Input: 9 standardized features (numerical + ordinal encoded)
+- Hidden Layers:
+   Dense(128, ReLU) + BatchNormalization + Dropout(0.2)
+   Dense(128, ReLU) + BatchNormalization + Dropout(0.2)
+   Dense(64, ReLU) + BatchNormalization
+- Output: Dense(1) (Linear activation for dollar price)
+- Optimization: Adam (lr=0.002) with MAE loss and EarlyStopping
